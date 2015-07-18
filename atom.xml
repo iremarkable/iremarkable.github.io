@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[LiuFeiFei Blog with Octopress]]></title>
+  <title><![CDATA[liutop.com with Octopress]]></title>
   <link href="http://iremarkable.github.io/atom.xml" rel="self"/>
   <link href="http://iremarkable.github.io/"/>
-  <updated>2015-07-18T16:40:00+08:00</updated>
+  <updated>2015-07-18T16:54:38+08:00</updated>
   <id>http://iremarkable.github.io/</id>
   <author>
     <name><![CDATA[Liu FeiFei]]></name>
@@ -24,12 +24,12 @@
 
 <h3>写科技类的博客就是对自己工作的中发现的问题，感想的实时反馈，不难，不过难在：</h3>
 
-<blockquote><ol>
+<ol>
 <li>啥事都贵在坚持，坚持不容易，因为工作一忙了，身边的各种事情一多了，就很难坚持下去了。所以，给自己立个志，每周至少一篇。</li>
 <li>犹豫程序员不是专门的写手，在写作上的文笔水平多数不是很好，如果要写一篇大家能够看的懂，看得清楚明白的文章，还是需要话费比较的大的经历去修改的，这是第二难。</li>
 <li>最后一个就是能不能及时发现的有价值的想法及时记录，不一定网上存在，甚至比你写的更好的就没有价值了，至少对你是新的，人的成长都是从小白开始的嘛，所以对个人的成长还是比较有帮助的</li>
 </ol>
-</blockquote>
+
 
 <p>首先谢谢William <a href="http://williamherry.com/blog/2012/07/20/octopress-setup/">http://williamherry.com/blog/2012/07/20/octopress-setup/</a>！</p>
 
