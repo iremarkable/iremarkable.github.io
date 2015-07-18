@@ -71,6 +71,6 @@ github_skip_forks: true
 
 
 # Google Analytics
-google_analytics_tracking_id:UA-65288541-1
+google_analytics_tracking_id:"UA-65288541-1"
 
 
