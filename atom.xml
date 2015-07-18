@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Liunex的博客]]></title>
+  <title><![CDATA[LiuTop的博客]]></title>
   <link href="http://iremarkable.github.io/atom.xml" rel="self"/>
   <link href="http://iremarkable.github.io/"/>
-  <updated>2015-07-18T17:33:20+08:00</updated>
+  <updated>2015-07-18T17:46:29+08:00</updated>
   <id>http://iremarkable.github.io/</id>
   <author>
-    <name><![CDATA[Liunex]]></name>
+    <name><![CDATA[Liutop.com]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
@@ -15,18 +15,18 @@
   
   <entry>
     <title type="html"><![CDATA[使用Github+Octopress搭建博客]]></title>
-    <link href="http://iremarkable.github.io/blog/2015/07/18/shi-yong-github-plus-octopressda-jian-bo-ke/"/>
+    <link href="http://iremarkable.github.io/blog/20150718/shi-yong-github-plus-octopressda-jian-bo-ke.html/"/>
     <updated>2015-07-18T16:58:03+08:00</updated>
-    <id>http://iremarkable.github.io/blog/2015/07/18/shi-yong-github-plus-octopressda-jian-bo-ke</id>
+    <id>http://iremarkable.github.io/blog/20150718/shi-yong-github-plus-octopressda-jian-bo-ke</id>
     <content type="html"><![CDATA[
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[欢迎]]></title>
-    <link href="http://iremarkable.github.io/blog/2015/07/18/huan-ying/"/>
+    <link href="http://iremarkable.github.io/blog/20150718/huan-ying.html/"/>
     <updated>2015-07-18T16:17:30+08:00</updated>
-    <id>http://iremarkable.github.io/blog/2015/07/18/huan-ying</id>
+    <id>http://iremarkable.github.io/blog/20150718/huan-ying</id>
     <content type="html"><![CDATA[<h3>开启我的Octopress之旅</h3>
 
 <h4>由于各种原因，对git不熟悉，网络被强等等各种原因，花了一天半的时间终于把octopress配置好了，并且购买了域名。Gitbut+Octopress正式之旅开始了。</h4>
