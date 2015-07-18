@@ -70,3 +70,8 @@ github_skip_forks: true
 google_analytics_tracking_id: UA-65288541-1
 
 
+# Disqus Comments
+disqus_short_name: liunex
+disqus_show_comment_count: true 
+
+
