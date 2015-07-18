@@ -3,8 +3,8 @@
 # ----------------------- #
 
 url: http://iremarkable.github.io
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
+title: LiuFeiFei's Blog with Octopress
+subtitle: 思想点滴的汇流.
 author: Your Name
 simple_search: https://www.google.com/search
 description:
@@ -68,4 +68,9 @@ github_user:
 github_repo_count: 0
 github_show_profile_link: true
 github_skip_forks: true
+
+
+# Google Analytics
+google_analytics_tracking_id:UA-65288541-1
+
 
