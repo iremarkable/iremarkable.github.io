@@ -28,6 +28,34 @@
   <script src="/javascripts/octopress.js" type="text/javascript"></script>
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
 <link href='http://fonts.googleapis.com/css?family=Delius' rel='stylesheet' type='text/css'>
+
+<!-- MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+<script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
   
   <script type="text/javascript">
     var _gaq = _gaq || [];
@@ -88,9 +116,9 @@
 <time class='entry-date' datetime='2015-07-18T12:54:00+08:00'><span class='date'>2015 年7 月18 日</span> <span class='time'>12:54 pm</span></time></p>
   </header>
   
-  <h3>this is the first post to the octopress!</h3>
+  <h3 id="this-is-the-first-post-to-the-octopress">this is the first post to the octopress!</h3>
 
-<h3>Enjoy it.</h3>
+<h3 id="enjoy-it">Enjoy it.</h3>
 
   
     <footer>
