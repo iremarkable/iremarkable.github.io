@@ -4,7 +4,7 @@
   <title><![CDATA[LiuTop的博客]]></title>
   <link href="http://iremarkable.github.io/atom.xml" rel="self"/>
   <link href="http://iremarkable.github.io/"/>
-  <updated>2015-07-18T18:05:08+08:00</updated>
+  <updated>2015-07-18T18:11:44+08:00</updated>
   <id>http://iremarkable.github.io/</id>
   <author>
     <name><![CDATA[Liutop.com]]></name>
@@ -29,18 +29,18 @@
     <id>http://iremarkable.github.io/blog/20150718/huan-ying</id>
     <content type="html"><![CDATA[<h3 id="octopress">开启我的Octopress之旅</h3>
 
-<h4 id="gitoctopressgitbutoctopress">由于各种原因，对git不熟悉，网络被强等等各种原因，花了一天半的时间终于把octopress配置好了，并且购买了域名。Gitbut+Octopress正式之旅开始了。</h4>
+<h4 id="gitoctopressgitbuboctopress">由于各种原因，对git不熟悉，网络被强等等各种原因，花了一天半的时间终于把octopress配置好了，并且购买了域名。Gitbub+Octopress正式之旅开始了。</h4>
 
-<h3 id="section">写科技类的博客就是对自己工作的中发现的问题，感想的实时反馈，不难，不过难在：</h3>
+<h3 id="section">写科技类的博客就是对自己工作的中发现的问题和感想的实时反馈。不难，不过难在：</h3>
 <ol>
-  <li>啥事都贵在坚持，坚持不容易，因为工作一忙了，身边的各种事情一多了，就很难坚持下去了。所以，给自己立个志，每周至少一篇。</li>
+  <li>啥事都贵在坚持，坚持不容易，因为工作一忙了，身边的各种事情一多了，就很难坚持下去了。所以，给自己立个志，每两至少一篇。</li>
   <li>犹豫程序员不是专门的写手，在写作上的文笔水平多数不是很好，如果要写一篇大家能够看的懂，看得清楚明白的文章，还是需要话费比较的大的经历去修改的，这是第二难。</li>
   <li>最后一个就是能不能及时发现的有价值的想法及时记录，不一定网上存在，甚至比你写的更好的就没有价值了，至少对你是新的，人的成长都是从小白开始的嘛，所以对个人的成长还是比较有帮助的</li>
 </ol>
 
 <p>首先谢谢William <a href="http://williamherry.com/blog/2012/07/20/octopress-setup/">http://williamherry.com/blog/2012/07/20/octopress-setup/</a>！</p>
 
-<h4 id="bloghttpwilliamherrycomblogarchives">推荐一下的他的blog:<a href="http://williamherry.com/blog/archives/">http://williamherry.com/blog/archives/</a></h4>
+<h4 id="blog-httpwilliamherrycomblogarchives">推荐一下的他的blog: <a href="http://williamherry.com/blog/archives/">http://williamherry.com/blog/archives/</a></h4>
 ]]></content>
   </entry>
   
