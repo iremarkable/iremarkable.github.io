@@ -4,7 +4,7 @@
   <title><![CDATA[LiuTop的博客]]></title>
   <link href="http://iremarkable.github.io/atom.xml" rel="self"/>
   <link href="http://iremarkable.github.io/"/>
-  <updated>2015-07-18T18:11:44+08:00</updated>
+  <updated>2015-07-18T18:28:56+08:00</updated>
   <id>http://iremarkable.github.io/</id>
   <author>
     <name><![CDATA[Liutop.com]]></name>
@@ -29,7 +29,7 @@
     <id>http://iremarkable.github.io/blog/20150718/huan-ying</id>
     <content type="html"><![CDATA[<h3 id="octopress">开启我的Octopress之旅</h3>
 
-<h4 id="gitoctopressgitbuboctopress">由于各种原因，对git不熟悉，网络被强等等各种原因，花了一天半的时间终于把octopress配置好了，并且购买了域名。Gitbub+Octopress正式之旅开始了。</h4>
+<h4 id="gitoctopressgithuboctopress">由于各种原因，对git不熟悉，网络被强等等各种原因，花了一天半的时间终于把octopress配置好了，并且购买了域名。Github+Octopress正式之旅开始了。</h4>
 
 <h3 id="section">写科技类的博客就是对自己工作的中发现的问题和感想的实时反馈。不难，不过难在：</h3>
 <ol>
