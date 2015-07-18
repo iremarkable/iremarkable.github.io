@@ -41,3 +41,10 @@ single: true
   {% endif %}
 </aside>
 {% endunless %}
+
+
+{% if site.comment_share %}
+  {% include post/share_comment.html %}
+{% endif %}
+
+
