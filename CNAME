@@ -1,0 +1,3 @@
+echo 'liutop.com' >> source/CNAME
+# OR
+echo 'www.liutop.com' >> source/CNAME
