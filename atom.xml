@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[LiuFeiFei - [<a href='#'>liutop.com</a>]]]></title>
+  <title><![CDATA[Liunex的博客]]></title>
   <link href="http://iremarkable.github.io/atom.xml" rel="self"/>
   <link href="http://iremarkable.github.io/"/>
-  <updated>2015-07-18T17:12:38+08:00</updated>
+  <updated>2015-07-18T17:33:20+08:00</updated>
   <id>http://iremarkable.github.io/</id>
   <author>
-    <name><![CDATA[Liu FeiFei]]></name>
+    <name><![CDATA[Liunex]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
