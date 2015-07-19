@@ -75,6 +75,6 @@ google_analytics_tracking_id: UA-65288541-1
 #duoshuo_show_comment_count: true
 
 # comment and share
-comment_share: true
+# comment_share: true
 
 
