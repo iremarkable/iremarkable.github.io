@@ -4,7 +4,7 @@
   <title><![CDATA[分类：github | LiuTop的博客]]></title>
   <link href="http://iremarkable.github.io/blog/categories/github/atom.xml" rel="self"/>
   <link href="http://iremarkable.github.io/"/>
-  <updated>2015-07-19T18:27:42+08:00</updated>
+  <updated>2015-07-19T18:47:51+08:00</updated>
   <id>http://iremarkable.github.io/</id>
   <author>
     <name><![CDATA[Liutop.com]]></name>
@@ -35,9 +35,10 @@
   <li>
     <p>首先安装HomeBrew</p>
 
-    <pre><code>  1. ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"  
-  2. brew doctor  //这个是用来诊断的，当出现Your system is ready to brew.就表示OK了。
-</code></pre>
+    <ol>
+      <li>ruby -e “$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)”</li>
+      <li>brew doctor  //这个是用来诊断的，当出现Your system is ready to brew.就表示OK了。</li>
+    </ol>
   </li>
   <li>
     <p>安装Ruby</p>
@@ -165,6 +166,8 @@ rake new_post["你的文章标题"]
     <pre><code>  rake generate
   rake deploy
 </code></pre>
+
+    <p><strong><em>小技巧：rake gen_deploy 等同于 rake generate 和 rake deploy, 是不是很方便呢—</em></strong></p>
   </li>
 </ul>
 
