@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://iremarkable.github.io/blog/20150719/gu-la-ge-du-shu-bi-ji.html</loc>
+    <lastmod>2015-07-19T19:17:08+08:00</lastmod>
+  </url>
+  <url>
     <loc>http://iremarkable.github.io/blog/20150718/shi-yong-github-plus-octopressda-jian-bo-ke.html</loc>
     <lastmod>2015-07-18T16:58:03+08:00</lastmod>
   </url>
@@ -22,5 +26,8 @@
   </url>
   <url>
     <loc>http://iremarkable.github.io/blog/categories/github/</loc>
+  </url>
+  <url>
+    <loc>http://iremarkable.github.io/blog/categories/du-shu-bi-ji/</loc>
   </url>
 </urlset>
