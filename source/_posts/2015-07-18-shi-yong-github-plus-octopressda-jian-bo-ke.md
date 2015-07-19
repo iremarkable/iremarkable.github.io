@@ -27,9 +27,10 @@ categories:  Github
  	
 * 首先安装HomeBrew 	
 
-		1. ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"  
-		2. brew doctor  //这个是用来诊断的，当出现Your system is ready to brew.就表示OK了。
-
+	1. ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"  
+	2. brew doctor  //这个是用来诊断的，当出现Your system is ready to brew.就表示OK了。
+	
+	
 * 安装Ruby
 
 		curl -L https://get.rvm.io | bash -s stable --ruby
@@ -131,7 +132,7 @@ categories:  Github
 		
 		   
    		   	
-	
+  ___小技巧：rake gen_deploy 等同于 rake generate 和 rake deploy, 是不是很方便呢—___
 	
 
 
