@@ -4,7 +4,7 @@
   <title><![CDATA[分类：github | LiuTop的博客]]></title>
   <link href="http://iremarkable.github.io/blog/categories/github/atom.xml" rel="self"/>
   <link href="http://iremarkable.github.io/"/>
-  <updated>2015-07-19T18:59:24+08:00</updated>
+  <updated>2015-07-19T19:05:32+08:00</updated>
   <id>http://iremarkable.github.io/</id>
   <author>
     <name><![CDATA[Liutop.com]]></name>
@@ -20,7 +20,7 @@
     <id>http://iremarkable.github.io/blog/20150718/shi-yong-github-plus-octopressda-jian-bo-ke</id>
     <content type="html"><![CDATA[<h2 id="macgitoctopressmac">折腾一天半终于把Mac环境的Git+Octopress搭建好了，现在简要的说下在Mac上搭建步骤.</h2>
 
-<p><code>提示：配置环境的时候，由于被强的原因，有的软件下载不下来，请使用VPN</code></p>
+<p><em>提示：配置环境的时候，由于被强的原因，有的软件下载不下来，请使用VPN</em></p>
 
 <h3 id="section">(1) 环境配置</h3>
 
@@ -59,9 +59,7 @@ rvm rubygems latest
   <li>2.1 安装octopress<br /></li>
 </ul>
 
-<blockquote>
-  <p>首先在建立一个文件夹存放octopress，我的目录是 ~/Dev/Github.</p>
-</blockquote>
+<p>首先在建立一个文件夹存放octopress，我的目录是 ~/Dev/Github.</p>
 
 <p>执行命令：</p>
 
@@ -138,7 +136,7 @@ rake preview
 </ul>
 
 <blockquote>
-  <p>注意不要命名成为youname.github.com的形式，这是Github之前使用的格式，现在推荐的是yourname.github.io`</p>
+  <p>注意不要命名成为youname.github.com的形式，这是Github之前使用的格式，现在推荐的是yourname.github.io</p>
 </blockquote>
 
 <ul>
@@ -185,7 +183,7 @@ rake deploy
 rake gen_deploy
 </code></p>
 
-<p><strong>小技巧：rake gen_deploy 等同于 rake generate 和 rake deploy, 是不是很方便呢—</strong></p>
+<p><em>小技巧：rake gen_deploy 等同于 rake generate 和 rake deploy, 是不是很方便呢</em></p>
 
 <h3 id="sudo">如果出现权限的问题，请在命令前加上sudo</h3>
 
