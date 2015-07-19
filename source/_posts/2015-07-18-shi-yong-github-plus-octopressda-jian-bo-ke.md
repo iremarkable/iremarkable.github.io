@@ -11,7 +11,7 @@ categories:  Github
 
 ##折腾一天半终于把Mac环境的Git+Octopress搭建好了，现在简要的说下在Mac上搭建步骤.
 
-`提示：配置环境的时候，由于被强的原因，有的软件下载不下来，请使用VPN`
+*提示：配置环境的时候，由于被强的原因，有的软件下载不下来，请使用VPN*
 
 
 
@@ -49,7 +49,7 @@ rvm rubygems latest
 
 * 2.1 安装octopress<br/>
 
-> 首先在建立一个文件夹存放octopress，我的目录是 ~/Dev/Github.
+首先在建立一个文件夹存放octopress，我的目录是 ~/Dev/Github.
 
   执行命令：
   
@@ -110,7 +110,7 @@ rake preview
 
 	命名： [your_username].github.io ,创建成功过后出现SSH地址：git@github.com:[your_username]/[your_username].github.io.git
 	
-> 注意不要命名成为youname.github.com的形式，这是Github之前使用的格式，现在推荐的是yourname.github.io`
+> 注意不要命名成为youname.github.com的形式，这是Github之前使用的格式，现在推荐的是yourname.github.io
 	
 * 4.3 将本地的octopress发不到Github pages
 
@@ -145,7 +145,7 @@ rake gen_deploy
 ```	
 		   
    		   	
-  __小技巧：rake gen_deploy 等同于 rake generate 和 rake deploy, 是不是很方便呢—__
+  *小技巧：rake gen_deploy 等同于 rake generate 和 rake deploy, 是不是很方便呢*
 	
 
 
