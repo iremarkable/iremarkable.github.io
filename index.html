@@ -5,11 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>liutop.com - LiuTop的博客</title>
+  <title>LiuTop的博客</title>
   <meta name="author" content="Liutop.com">
 
   
-  <meta name="description" content="liutop.com 2015 年7 月18 日 3:01 pm 学习，知识的记录 2015 年7 月18 日 3:01 pm About Me iOS 程序员，移动医疗创业者 Recent Posts 使用Github+Octopress搭建博客 欢迎 GitHub Repos Status &hellip;">
+  <meta name="description" content="折腾一天半终于把Mac环境的Git+Octopress搭建好了，现在简要的说下在Mac上搭建步骤. 提示：配置环境的时候，由于被强的原因，有的软件下载不下来，请使用VPN (1) 环境配置
+### 1.1 安装Git 安装Git很简单，下载完成后安装即可 下载地址 1.2 安装Ruby &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -21,41 +22,15 @@
   <link rel="canonical" href="http://iremarkable.github.io/index.html">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/atom.xml" rel="alternate" title="LiuTop的博客" type="application/atom+xml">
   <script src="/javascripts/modernizr-2.0.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script>!window.jQuery && document.write(unescape('%3Cscript src="/javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/ender.js"></script>
   <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="LiuTop的博客" type="application/atom+xml">
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href='http://fonts.googleapis.com/css?family=Delius' rel='stylesheet' type='text/css'>
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 
-<!-- MathJax -->
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    tex2jax: {
-      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-      processEscapes: true
-    }
-  });
-</script>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-      tex2jax: {
-        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-      }
-    });
-</script>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for(i=0; i < all.length; i += 1) {
-            all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-    });
-</script>
-<script type="text/javascript"
-   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
   
   <script type="text/javascript">
     var _gaq = _gaq || [];
@@ -72,7 +47,7 @@
 
 </head>
 
-<body   >
+<body>
   <header role="banner"><hgroup>
   <h1><a href="/">LiuTop的博客</a></h1>
   
@@ -81,64 +56,278 @@
 </hgroup>
 
 </header>
-  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <div id="navigation">
+    <nav role="navigation"><ul class="subscription" data-subscription="rss">
   <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
   
 </ul>
   
 <form action="https://www.google.com/search" method="get">
   <fieldset role="search">
-    <input type="hidden" name="sitesearch" value="iremarkable.github.io">
+    <input type="hidden" name="q" value="site:iremarkable.github.io" />
     <input class="search" type="text" name="q" results="0" placeholder="Search"/>
   </fieldset>
 </form>
   
 <ul class="main-navigation">
-  <li><a href="">首页</a></li>
-  <li><a href="/blog/archives">文章列表</a></li>
-</url>
-
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
 
 </nav>
-  <div id="main">
-    <div id="content">
-      <div>
-<article role="article">
+  </div>
+  <div id="body"  >
+    <div id="main">
+      <div id="content">
+        <div class="blog-index">
   
+  
+  
+    <article>
+      
   <header>
-    <h1 class="entry-title">liutop.com</h1>
-    <p class="meta">
-
-
-
-
-<time class='entry-date' datetime='2015-07-18T15:01:00+08:00'><span class='date'>2015 年7 月18 日</span> <span class='time'>3:01 pm</span></time></p>
-  </header>
-  
-  <h2>学习，知识的记录</h2>
-  
-    <footer>
+    
+      <h1 class="entry-title"><a href="/blog/20150718/shi-yong-github-plus-octopressda-jian-bo-ke.html">使用Github+Octopress搭建博客</a></h1>
+    
+    
       <p class="meta">
         
-        
 
 
 
 
-<time class='entry-date' datetime='2015-07-18T15:01:00+08:00'><span class='date'>2015 年7 月18 日</span> <span class='time'>3:01 pm</span></time>
+
+
+
+
+  
+
+
+<time datetime="2015-07-18T16:58:03+08:00" pubdate data-updated="true"></time>
         
       </p>
-      
-        <div class="sharing">
-</div>
+    
+  </header>
 
-      
-    </footer>
+
+  <div class="entry-content"><h2 id="macgitoctopressmac">折腾一天半终于把Mac环境的Git+Octopress搭建好了，现在简要的说下在Mac上搭建步骤.</h2>
+
+<p><code>提示：配置环境的时候，由于被强的原因，有的软件下载不下来，请使用VPN</code></p>
+
+<h3 id="section">(1) 环境配置</h3>
+<p>### 1.1 安装Git 
+安装Git很简单，下载完成后安装即可 <a href="http://git-scm.com/">下载地址</a></p>
+
+<h4 id="ruby">1.2 安装Ruby</h4>
+
+<p>安装Ruby不像Git那么简单，需要借助<a href="http://brew.sh/index_zh-cn.html">HomeBrew</a>来安装</p>
+
+<ul>
+  <li>
+    <p>首先安装HomeBrew</p>
+
+    <pre><code>  1. ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"  
+  2. brew doctor  //这个是用来诊断的，当出现Your system is ready to brew.就表示OK了。
+</code></pre>
+  </li>
+  <li>
+    <p>安装Ruby</p>
+
+    <pre><code>  curl -L https://get.rvm.io | bash -s stable --ruby
+	
+  或者安装指定的稳定版本：
+  rvm install 2.0.0
+  rvm use 2.0.0	
+  rvm rubygems latest
+
+  以上二者选一
+</code></pre>
+  </li>
+</ul>
+
+<h3 id="octopress">(2) 安装Octopress</h3>
+
+<ul>
+  <li>2.1 安装octopress<br /></li>
+</ul>
+
+<blockquote>
+  <p>首先在建立一个文件夹存放octopress，我的目录是 ~/Dev/Github.</p>
+</blockquote>
+
+<p>执行命令：</p>
+
+<pre><code>	1. cd Dev/Github  //进入存放octopress的目录
+	2. git clone git://github.com/imathis/octopress.git octopress
+	3. cd octopress   //进入octopress的目录，以后的所有操作都是基于进入该目录后的操作，请注意
+</code></pre>
+
+<ul>
+  <li>
+    <p>2.2 安装Bunlder<br />
+&gt;	这一步会出现网络问题，可以多试试几次，如果不行，请使用VPN.</p>
+
+    <p>执行命令：</p>
+
+    <pre><code>  1. gem install bundler
+  2. bundle install
+</code></pre>
+  </li>
+  <li>
+    <p>2.3 预览安装效果</p>
+
+    <p>执行命令：</p>
+
+    <pre><code>  rake preview
+</code></pre>
+
+    <p>然后在浏览器中打开：http://localhost:4000 就可看到效果了</p>
+  </li>
+</ul>
+
+<h3 id="section-1">(3) 发布新文章</h3>
+
+<ul>
+  <li>
+    <p>执行命令：</p>
+
+    <pre><code>cd octopress
+rake new_post["你的文章标题"]
+</code></pre>
+  </li>
+</ul>
+
+<p>然后会在<code>octopress/source/_posts</code>的目录下生成你命名的 markdown文件，使用 markdown编辑器编辑你要写的文章就可了</p>
+
+<ul>
+  <li>
+    <p>及时预览</p>
+
+    <p>执行命令：</p>
+
+    <pre><code>  rake generate   //将你编写markdown文件转化为HTML
+  rake preview    
+</code></pre>
+  </li>
+</ul>
+
+<h3 id="git">(4) 文件提到到Git/部署</h3>
+<ul>
+  <li>
+    <p>4.1 创建Github帐号</p>
+
+    <p>打开<a href="http://github.com">Github</a></p>
+  </li>
+  <li>
+    <p>4.2 创建repository</p>
+
+    <p>命名： [your_username].github.io ,创建成功过后出现SSH地址：git@github.com:[your_username]/[your_username].github.io.git</p>
+
+    <p><code>注意不要命名成为youname.github.com的形式，这是Github之前使用的格式，现在推荐的是yourname.github.io</code></p>
+  </li>
+  <li>
+    <p>4.3 将本地的octopress发不到Github pages</p>
+
+    <p>执行命令：</p>
+
+    <pre><code>  cd octopress
+  rake setup_github_pages
+	
+  该步骤会提醒您输入SSH地址，就把您创建您的repository的SSH地址粘贴进入就可了	   	
+</code></pre>
+  </li>
+  <li>
+    <p>4.4 提交更新到Github</p>
+
+    <p>执行命令：</p>
+
+    <pre><code>  git add .
+  git commit -m '您的提交备注'
+  git push origin source
+	
+  每次有变动都要执行该3个命令做数据同步
+</code></pre>
+  </li>
+  <li>
+    <p>4.5 部署</p>
+
+    <p>执行命令：</p>
+
+    <pre><code>  rake generate
+  rake deploy
+</code></pre>
+  </li>
+</ul>
+
+<h3 id="sudo">如果出现权限的问题，请在命令前加上sudo</h3>
+
+<h3 id="section-2">参考:</h3>
+<ol>
+  <li><a href="http://shengmingzhiqing.com/blog/setup-octopress-with-github-pages.html/">http://shengmingzhiqing.com/blog/setup-octopress-with-github-pages.html/</a></li>
+  <li><a href="http://williamherry.com/blog/2012/07/20/octopress-setup/">http://williamherry.com/blog/2012/07/20/octopress-setup/</a></li>
+</ol>
+</div>
   
-</article>
+  
 
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/20150718/huan-ying.html">欢迎</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-07-18T16:17:30+08:00" pubdate data-updated="true"></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h3 id="octopress">开启我的Octopress之旅</h3>
+
+<h4 id="gitoctopressgithuboctopress">由于各种原因，对git不熟悉，网络被强等等各种原因，花了一天半的时间终于把octopress配置好了，并且购买了域名。Github+Octopress正式之旅开始了。</h4>
+
+<h3 id="section">写科技类的博客就是对自己工作的中发现的问题和感想的实时反馈。不难，不过难在：</h3>
+<ol>
+  <li>啥事都贵在坚持，坚持不容易，因为工作一忙了，身边的各种事情一多了，就很难坚持下去了。所以，给自己立个志，每两至少一篇。</li>
+  <li>犹豫程序员不是专门的写手，在写作上的文笔水平多数不是很好，如果要写一篇大家能够看的懂，看得清楚明白的文章，还是需要话费比较的大的经历去修改的，这是第二难。</li>
+  <li>最后一个就是能不能及时发现的有价值的想法及时记录，不一定网上存在，甚至比你写的更好的就没有价值了，至少对你是新的，人的成长都是从小白开始的嘛，所以对个人的成长还是比较有帮助的</li>
+</ol>
+
+<p>首先谢谢William <a href="http://williamherry.com/blog/2012/07/20/octopress-setup/">http://williamherry.com/blog/2012/07/20/octopress-setup/</a>！</p>
+
+<h4 id="blog-httpwilliamherrycomblogarchives">推荐一下的他的blog: <a href="http://williamherry.com/blog/archives/">http://williamherry.com/blog/archives/</a></h4>
 </div>
+  
+  
 
+
+    </article>
+  
+  <div class="pagination">
+    
+    <a href="/blog/archives">Blog Archives</a>
+    
+  </div>
+</div>
 <aside class="sidebar">
   
     <section>
@@ -169,7 +358,7 @@
   <a href="https://github.com/iremarkable">@iremarkable</a> on GitHub
   
   <script type="text/javascript">
-    $(document).ready(function(){
+    $.domReady(function(){
         if (!window.jXHR){
             var jxhr = document.createElement('script');
             jxhr.type = 'text/javascript';
@@ -193,17 +382,26 @@
   
 </aside>
 
-
+      </div>
     </div>
-  </div>
-  <footer role="contentinfo"><p>
+    <footer role="contentinfo"><p>
   Copyright &copy; 2015 - Liutop.com -
-  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a>. Design by <a href="http://octopressthemes.com">Octopress Themes</a></span>
 </p>
 
 </footer>
-  
+    
 
 
+
+
+
+
+
+
+
+
+
+  </div>
 </body>
 </html>
