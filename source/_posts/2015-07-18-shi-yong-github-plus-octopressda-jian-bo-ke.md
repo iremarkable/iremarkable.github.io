@@ -17,17 +17,18 @@ categories:  Github
 
 
 ###(1) 环境配置
-#### 1.1 安装Git 
+### 1.1 安装Git 
 安装Git很简单，下载完成后安装即可 [下载地址](http://git-scm.com/)
 
 #### 1.2 安装Ruby 
  
- >安装Ruby不像Git那么简单，需要借助[HomeBrew](http://brew.sh/index_zh-cn.html)来安装
+ 安装Ruby不像Git那么简单，需要借助[HomeBrew](http://brew.sh/index_zh-cn.html)来安装
  	
 * 首先安装HomeBrew 	
 
 		1. ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"  
 		2. brew doctor  //这个是用来诊断的，当出现Your system is ready to brew.就表示OK了。
+
 * 安装Ruby
 
 		curl -L https://get.rvm.io | bash -s stable --ruby
@@ -47,10 +48,10 @@ categories:  Github
 
 > 首先在建立一个文件夹存放octopress，我的目录是 ~/Dev/Github.
 
- 执行命令：
+  执行命令：
  
 		1. cd Dev/Github  //进入存放octopress的目录
-	 	2. git clone git://github.com/imathis/octopress.git octopress
+		2. git clone git://github.com/imathis/octopress.git octopress
 		3. cd octopress   //进入octopress的目录，以后的所有操作都是基于进入该目录后的操作，请注意
 
 * 2.2 安装Bunlder<br/>
@@ -76,7 +77,7 @@ categories:  Github
   * 执行命令：
   
 		cd octopress
-	    rake new_post["你的文章标题"]
+		rake new_post["你的文章标题"]
    
    然后会在`octopress/source/_posts`的目录下生成你命名的 markdown文件，使用 markdown编辑器编辑你要写的文章就可了
 	
@@ -84,7 +85,7 @@ categories:  Github
 
    执行命令：
 		
-		rake generate   //将你说编写markdown文件转化为HTML
+		rake generate   //将你编写markdown文件转化为HTML
 		rake preview    
 		 
 		 
