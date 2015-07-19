@@ -4,7 +4,7 @@
   <title><![CDATA[LiuTop的博客]]></title>
   <link href="http://iremarkable.github.io/atom.xml" rel="self"/>
   <link href="http://iremarkable.github.io/"/>
-  <updated>2015-07-19T18:52:03+08:00</updated>
+  <updated>2015-07-19T18:59:24+08:00</updated>
   <id>http://iremarkable.github.io/</id>
   <author>
     <name><![CDATA[Liutop.com]]></name>
@@ -37,24 +37,25 @@
 
 <div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
-</pre></td><td class="code"><pre><code class=""><span class="line">1. ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"  
-</span><span class="line">2. brew doctor  //这个是用来诊断的，当出现Your system is ready to brew.就表示OK了。</span></code></pre></td></tr></table></div></figure></notextile></div>
+</pre></td><td class="code"><pre><code class=""><span class="line">ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"  
+</span><span class="line">brew doctor  //这个是用来诊断的，当出现Your system is ready to brew.就表示OK了。</span></code></pre></td></tr></table></div></figure></notextile></div>
 
 <ul>
-  <li>
-    <p>安装Ruby</p>
-
-    <pre><code>  curl -L https://get.rvm.io | bash -s stable --ruby
-	
-  或者安装指定的稳定版本：
-  rvm install 2.0.0
-  rvm use 2.0.0	
-  rvm rubygems latest
-
-  以上二者选一
-</code></pre>
-  </li>
+  <li>安装Ruby</li>
 </ul>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">curl -L https://get.rvm.io | bash -s stable --ruby
+</span><span class="line">或者安装指定的稳定版本：
+</span><span class="line">rvm install 2.0.0
+</span><span class="line">rvm use 2.0.0	
+</span><span class="line">rvm rubygems latest
+</span><span class="line">以上二者选一</span></code></pre></td></tr></table></div></figure></notextile></div>
 
 <h3 id="octopress">(2) 安装Octopress</h3>
 
@@ -68,10 +69,12 @@
 
 <p>执行命令：</p>
 
-<pre><code>	1. cd Dev/Github  //进入存放octopress的目录
-	2. git clone git://github.com/imathis/octopress.git octopress
-	3. cd octopress   //进入octopress的目录，以后的所有操作都是基于进入该目录后的操作，请注意
-</code></pre>
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">cd Dev/Github  //进入存放octopress的目录
+</span><span class="line">git clone git://github.com/imathis/octopress.git octopress
+</span><span class="line">cd octopress   //进入octopress的目录，以后的所有操作都是基于进入该目录后的操作，请注意</span></code></pre></td></tr></table></div></figure></notextile></div>
 
 <ul>
   <li>
@@ -79,48 +82,52 @@
 &gt;	这一步会出现网络问题，可以多试试几次，如果不行，请使用VPN.</p>
 
     <p>执行命令：</p>
-
-    <pre><code>  1. gem install bundler
-  2. bundle install
-</code></pre>
   </li>
+</ul>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">gem install bundler
+</span><span class="line">bundle install</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<ul>
   <li>
     <p>2.3 预览安装效果</p>
 
     <p>执行命令：</p>
-
-    <pre><code>  rake preview
-</code></pre>
-
-    <p>然后在浏览器中打开：http://localhost:4000 就可看到效果了</p>
   </li>
 </ul>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">rake preview</span></code></pre></td></tr></table></div></figure></notextile></div>
+<blockquote>
+  <p>然后在浏览器中打开：http://localhost:4000 就可看到效果了</p>
+</blockquote>
 
 <h3 id="section-1">(3) 发布新文章</h3>
 
 <ul>
-  <li>
-    <p>执行命令：</p>
-
-    <pre><code>cd octopress
-rake new_post["你的文章标题"]
-</code></pre>
-  </li>
+  <li>执行命令：</li>
 </ul>
 
-<p>然后会在<code>octopress/source/_posts</code>的目录下生成你命名的 markdown文件，使用 markdown编辑器编辑你要写的文章就可了</p>
+<p><code>
+cd octopress
+rake new_post["你的文章标题"]
+  </code>
+&gt; 然后会在<code>octopress/source/_posts</code>的目录下生成你命名的 markdown文件，使用 markdown编辑器编辑你要写的文章就可了</p>
 
 <ul>
   <li>
     <p>及时预览</p>
 
     <p>执行命令：</p>
-
-    <pre><code>  rake generate   //将你编写markdown文件转化为HTML
-  rake preview    
-</code></pre>
   </li>
 </ul>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">rake generate   //将你编写markdown文件转化为HTML
+</span><span class="line">rake preview    </span></code></pre></td></tr></table></div></figure></notextile></div>
 
 <h3 id="git-1">(4) 文件提到到Git/部署</h3>
 <ul>
@@ -133,44 +140,63 @@ rake new_post["你的文章标题"]
     <p>4.2 创建repository</p>
 
     <p>命名： [your_username].github.io ,创建成功过后出现SSH地址：git@github.com:[your_username]/[your_username].github.io.git</p>
-
-    <p><code>注意不要命名成为youname.github.com的形式，这是Github之前使用的格式，现在推荐的是yourname.github.io</code></p>
   </li>
+</ul>
+
+<blockquote>
+  <p>注意不要命名成为youname.github.com的形式，这是Github之前使用的格式，现在推荐的是yourname.github.io`</p>
+</blockquote>
+
+<ul>
   <li>
     <p>4.3 将本地的octopress发不到Github pages</p>
 
     <p>执行命令：</p>
-
-    <pre><code>  cd octopress
-  rake setup_github_pages
-	
-  该步骤会提醒您输入SSH地址，就把您创建您的repository的SSH地址粘贴进入就可了	   	
-</code></pre>
   </li>
+</ul>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">cd octopress
+</span><span class="line">rake setup_github_pages</span></code></pre></td></tr></table></div></figure></notextile></div>
+<blockquote>
+  <p>该步骤会提醒您输入SSH地址，就把您创建您的repository的SSH地址粘贴进入就可了</p>
+</blockquote>
+
+<ul>
   <li>
     <p>4.4 提交更新到Github</p>
 
     <p>执行命令：</p>
-
-    <pre><code>  git add .
-  git commit -m '您的提交备注'
-  git push origin source
-	
-  每次有变动都要执行该3个命令做数据同步
-</code></pre>
   </li>
+</ul>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">git add .
+</span><span class="line">git commit -m '您的提交备注'
+</span><span class="line">git push origin source</span></code></pre></td></tr></table></div></figure></notextile></div>
+<p>每次有变动都要执行该3个命令做数据同步</p>
+
+<ul>
   <li>
     <p>4.5 部署</p>
 
     <p>执行命令：</p>
-
-    <pre><code>  rake generate
-  rake deploy
-</code></pre>
-
-    <p><strong>小技巧：rake gen_deploy 等同于 rake generate 和 rake deploy, 是不是很方便呢—</strong></p>
   </li>
 </ul>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">rake generate
+</span><span class="line">rake deploy
+</span><span class="line">或者
+</span><span class="line">rake gen_deploy</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p><strong>小技巧：rake gen_deploy 等同于 rake generate 和 rake deploy, 是不是很方便呢—</strong></p>
 
 <h3 id="sudo">如果出现权限的问题，请在命令前加上sudo</h3>
 
