@@ -17,10 +17,11 @@ categories:  Github
 
 
 ###(1) 环境配置
-### 1.1 安装Git 
+
+###1.1 安装Git 
 安装Git很简单，下载完成后安装即可 [下载地址](http://git-scm.com/)
 
-#### 1.2 安装Ruby 
+### 1.2 安装Ruby 
  
  安装Ruby不像Git那么简单，需要借助[HomeBrew](http://brew.sh/index_zh-cn.html)来安装
  	
@@ -54,7 +55,7 @@ categories:  Github
 		2. git clone git://github.com/imathis/octopress.git octopress
 		3. cd octopress   //进入octopress的目录，以后的所有操作都是基于进入该目录后的操作，请注意
 
-* 2.2 安装Bunlder<br/>
+* 2.2 安装Bundler<br/>
 >	这一步会出现网络问题，可以多试试几次，如果不行，请使用VPN.
 	
 	执行命令：
