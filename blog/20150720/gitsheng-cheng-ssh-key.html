@@ -1,0 +1,322 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Git生成SSH Key - LiuTop的博客</title>
+  <meta name="author" content="Liutop.com">
+
+  
+  <meta name="description" content="生成 Mac OSX Git SSH Key 翻译自https://help.github.com/articles/generating-ssh-keys/ 步骤 1 检查SSH Key 首先，我们需要检查SSH Key是否在电脑上存在。打开命令行工具，输入： 1
+ls -al ~/.ssh &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://iremarkable.github.io/blog/20150720/gitsheng-cheng-ssh-key.html">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="LiuTop的博客" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-65288541-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body>
+  <header role="banner"><hgroup>
+  <h1><a href="/">LiuTop的博客</a></h1>
+  
+    <h2>思想点滴的汇流 by liutop.com</h2>
+  
+</hgroup>
+
+</header>
+  <div id="navigation">
+    <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://www.google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:iremarkable.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">首页</a></li>
+  <li><a href="/blog/archives">文章列表</a></li>
+</ul>
+
+</nav>
+  </div>
+  <div id="body"  >
+    <div id="main">
+      <div id="content">
+        <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Git生成SSH Key</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-07-20T10:37:02+08:00" pubdate data-updated="true"></time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><h3 id="mac-osx-git-ssh-key">生成 Mac OSX Git SSH Key</h3>
+
+<p><a href="https://help.github.com/articles/generating-ssh-keys">翻译自https://help.github.com/articles/generating-ssh-keys/</a></p>
+
+<h3 id="ssh-key">步骤 1 检查SSH Key</h3>
+
+<p>首先，我们需要检查SSH Key是否在电脑上存在。打开命令行工具，输入：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">ls -al ~/.ssh</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>检查所列目录是否存在一个public SSH Key.  默认的情况，public ssh key 是以下几种:</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">id_dsa.pub
+</span><span class="line">id_ecdsa.pub
+</span><span class="line">id_ed25519.pub
+</span><span class="line">id_rsa.pub</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>如果你看到存在一对公有，私有的key(比如  id_rsa.pub and id_rsa )，就表明您曾经连接过Github, 这时候你可以选择跳过 第二步直接操作第三步</p>
+
+<p>如果报错，也不用担心，我们将在第二步创建</p>
+
+<h3 id="ssh-key-1">步骤 2  生成新的 SSH key</h3>
+
+<p>命令行输入：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">ssh-keygen -t rsa -b 4096 -C "your_email@example.com"</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p><em>然后接着如下操作:</em></p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+</pre></td><td class="code"><pre><code class=""><span class="line"> Enter file in which to save the key (/Users/you/.ssh/id_rsa):    //您直接回车就可以了
+</span><span class="line"> Enter passphrase (empty for no passphrase):  //输入您的密码
+</span><span class="line"> Enter same passphrase again:  //再次输入您的密码</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p><em>完成后将出现如下输出：</em></p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+</pre></td><td class="code"><pre><code class=""><span class="line"> Your identification has been saved in /Users/you/.ssh/id_rsa.
+</span><span class="line"> Your public key has been saved in /Users/you/.ssh/id_rsa.pub.
+</span><span class="line"> The key fingerprint is:
+</span><span class="line"> 01:0f:f4:3b:ca:85:d6:17:a1:7d:f0:68:9d:f0:a2:db your_email@example.com</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<h3 id="key--ssh-agent">步骤 3  添加 key 到 ssh-agent</h3>
+
+<p><em>命令行输入：</em></p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">eval "$(ssh-agent -s)"
+</span><span class="line">ssh-add ~/.ssh/id_rsa</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<h3 id="ssh-key-">步骤 4 添加你的 SSH key 到你的账户</h3>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">pbcopy &lt; ~/.ssh/id_rsa.pub</span></code></pre></td></tr></table></div></figure></notextile></div>
+<p>这样生成的key您就完成了拷贝，然后您在添加到您的Github账户中</p>
+
+<h3 id="section">步骤 5  测试连接</h3>
+<p><em>打开命令行输入：</em></p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">ssh -T git@github.com</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>当出现：Hi username! You’ve successfully authenticated, but GitHub does not
+ provide shell access. 就表示一切操作成功啦！</p>
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Liutop.com</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-07-20T10:37:02+08:00" pubdate data-updated="true"></time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/20150720/gisheng-cheng-ssh-key.html" title="Previous Post: Gi生成SSH Key">&laquo; Gi生成SSH Key</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>About Me</h1>
+  <p>iOS 程序员，移动医疗创业者</p>
+  
+</section><section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/20150720/gitsheng-cheng-ssh-key.html">Git生成SSH Key</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/20150720/gisheng-cheng-ssh-key.html">Gi生成SSH Key</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/20150719/gu-la-ge-du-shu-bi-ji.html">古拉格读书笔记</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/20150718/shi-yong-github-plus-octopressda-jian-bo-ke.html">使用Github+Octopress搭建博客</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/20150718/huan-ying.html">欢迎</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/iremarkable">@iremarkable</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'iremarkable',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+  
+</aside>
+
+
+      </div>
+    </div>
+    <footer role="contentinfo"><p>
+  Copyright &copy; 2015 - Liutop.com -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a>. Design by <a href="http://octopressthemes.com">Octopress Themes</a></span>
+</p>
+
+</footer>
+    
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</body>
+</html>
